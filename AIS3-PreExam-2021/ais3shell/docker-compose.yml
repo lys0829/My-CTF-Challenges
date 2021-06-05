@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  ais3shell:
+    build: ./
+    volumes:
+      - ./share:/home/ais3shell:ro
+      - ./xinetd:/etc/xinetd.d/ais3shell:ro
+    ports:
+      - "10103:10101"

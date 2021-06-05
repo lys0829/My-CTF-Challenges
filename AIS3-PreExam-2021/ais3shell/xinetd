@@ -1,0 +1,15 @@
+service ais3shell
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/ais3shell/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = ais3shell
+        port = 10101
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

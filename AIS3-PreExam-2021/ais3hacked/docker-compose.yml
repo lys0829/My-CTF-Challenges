@@ -1,0 +1,19 @@
+version: "3"
+services:
+  forensic-nginx:
+    depends_on:
+      - forensic-php7
+    image: nginx:latest
+    links:
+      - "forensic-php7"
+    ports:
+      - 8100:80
+    volumes:
+      - ./webroot:/webroot
+      - ./site.conf:/etc/nginx/conf.d/site.conf
+      - ./flag:/flag_c603222fc7a23ee4ae2d59c8eb2ba84d
+  forensic-php7:
+    image: php:7.4.3-fpm
+    volumes:
+      - ./webroot:/webroot
+      - ./flag:/flag_c603222fc7a23ee4ae2d59c8eb2ba84d
