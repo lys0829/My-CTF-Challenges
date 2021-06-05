@@ -76,7 +76,7 @@ Pragma: no-cache
 會看到 `Host: magic.ais3.org:8100`，這裡用到了 virtual host 的技術，讓同一個 http service 可以根據 domain name 將網站分開，可是 `dig magic.ais3.org` 會發現根本沒這個 domain name，這邊有兩個方法，一個是自己送 HTTP Request，並且加上 `Host: magic.ais3.org:8100` 這個 Header，或者是改 `/etc/hosts`，自己加上 domain name 對應。
 成功戳到 Webshell 之後，flag 就放在根目錄。
 
-附上一行解 (by seadog007): `curl -H 'Host: magic.ais3.org:8100' "10.153.11.126:8100/Index.php?page=\`echo cat ../fl\*| base64 | rev\`"`
+附上一行解 (by seadog007): $(curl -H 'Host: magic.ais3.org:8100' "10.153.11.126:8100/Index.php?page=`echo cat ../fl\*| base64 | rev`")
 
 這題的解題情況比我預期的慘很多QQ 我以為大家都會用 wireshark 而且也知道 virtual host 的說。
 
