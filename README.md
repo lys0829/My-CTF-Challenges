@@ -1,5 +1,12 @@
 # My CTF Challenges
 
+## BambooFox CTF 2021
+| Name                 | Category   | Keywords                  | Difficulty      |
+|----------------------|------------|---------------------------|-----------------|
+| BabyStack            | Pwn        | Stack pivoting, GOT Hijacking | Easy~Medium    |
+| Ropot                | Pwn        | ROP                       | Medium          |
+| House of CSY         | Pwn        | Thread, Heap              | Medium~Hard     |
+
 ## AIS3 PreExam/MyFirstCTF 2021
 * [Write up](AIS3-PreExam-2021/README.md)  
 
