@@ -2,8 +2,8 @@
 
 ## EaaS
 
-* Solved: 
-* Score: 
+* Solved: 3/430
+* Score: 421
 
 ### Vulnerability
 * Document.save() in the Python fitz package function has a buffer overflow [vuln](https://github.com/pymupdf/PyMuPDF/blob/a730bc6d8e77c2b39586cb826d79c7c70a1030f5/fitz/fitz.i#L1988).
