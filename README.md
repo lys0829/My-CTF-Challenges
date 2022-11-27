@@ -16,3 +16,8 @@
 | Blind                | Misc       | x86-64 system call, dup   | Easy            |
 | \[震撼彈\] AIS3 官網疑遭駭！ | Misc | forensics, pcap, http, virtual host, webshell | Easy |
 | AIS3Shell            | Pwn        | heap overflow             | Medium          |
+
+## HITCON CTF 2022
+| Name                 | Category   | Keywords                  | Difficulty      |
+|----------------------|------------|---------------------------|-----------------|
+| EaaS                 | Pwn        | python, fitz, Partial Overwrite | Easy~Medium    |
